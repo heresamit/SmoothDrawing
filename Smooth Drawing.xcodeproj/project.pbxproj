@@ -18,6 +18,7 @@
 		DF7756641794353700A981B5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF7756631794353700A981B5 /* Default-568h@2x.png */; };
 		DF7756671794353700A981B5 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7756651794353700A981B5 /* MainStoryboard.storyboard */; };
 		DF77566A1794353700A981B5 /* TDTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7756691794353700A981B5 /* TDTViewController.m */; };
+		DF77567B1794404C00A981B5 /* SmoothedBIView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF77567A1794404C00A981B5 /* SmoothedBIView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		DF7756661794353700A981B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		DF7756681794353700A981B5 /* TDTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDTViewController.h; sourceTree = "<group>"; };
 		DF7756691794353700A981B5 /* TDTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDTViewController.m; sourceTree = "<group>"; };
+		DF7756791794404C00A981B5 /* SmoothedBIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmoothedBIView.h; sourceTree = "<group>"; };
+		DF77567A1794404C00A981B5 /* SmoothedBIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmoothedBIView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				DF7756651794353700A981B5 /* MainStoryboard.storyboard */,
 				DF7756681794353700A981B5 /* TDTViewController.h */,
 				DF7756691794353700A981B5 /* TDTViewController.m */,
+				DF7756791794404C00A981B5 /* SmoothedBIView.h */,
+				DF77567A1794404C00A981B5 /* SmoothedBIView.m */,
 				DF7756541794353700A981B5 /* Supporting Files */,
 			);
 			path = "Smooth Drawing";
@@ -177,6 +182,7 @@
 				DF77565A1794353700A981B5 /* main.m in Sources */,
 				DF77565E1794353700A981B5 /* TDTAppDelegate.m in Sources */,
 				DF77566A1794353700A981B5 /* TDTViewController.m in Sources */,
+				DF77567B1794404C00A981B5 /* SmoothedBIView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
