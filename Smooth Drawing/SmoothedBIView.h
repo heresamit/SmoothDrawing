@@ -10,4 +10,6 @@
 
 @interface SmoothedBIView : UIView
 
+- (void)eraseAll;
+
 @end

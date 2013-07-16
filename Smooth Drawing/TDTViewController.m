@@ -17,13 +17,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.lpgr.minimumPressDuration = 1;
+    [self.lpgr addTarget:self action:@selector(refreshView)];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)refreshView {
+  if (self.lpgr.state == UIGestureRecognizerStateBegan) {
+    NSLog(@"YES");
+    [self.smoothDrawnView eraseAll];
+    [self.smoothDrawnView setNeedsDisplay];
+  }
 }
-
 @end

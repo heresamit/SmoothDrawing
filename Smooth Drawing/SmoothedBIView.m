@@ -80,15 +80,22 @@
     UIGraphicsBeginImageContextWithOptions(self.bounds.size, YES, 0.0);
     if (!incrementalImage)
     {
-        UIBezierPath *rectpath = [UIBezierPath bezierPathWithRect:self.bounds];
-        [[UIColor whiteColor] setFill];
-        [rectpath fill];
+      [self eraseAll];
     }
     [incrementalImage drawAtPoint:CGPointZero];
     [[UIColor blackColor] setStroke];
     [path stroke];
     incrementalImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
+}
+
+- (void)eraseAll {
+  UIGraphicsBeginImageContextWithOptions(self.bounds.size, YES, 0.0);
+  UIBezierPath *rectpath = [UIBezierPath bezierPathWithRect:self.bounds];
+  [[UIColor whiteColor] setFill];
+  [rectpath fill];
+  incrementalImage = UIGraphicsGetImageFromCurrentImageContext();
+  UIGraphicsEndImageContext();
 }
 
 @end

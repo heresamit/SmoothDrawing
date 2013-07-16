@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SmoothedBIView.h"
 
 @interface TDTViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UILongPressGestureRecognizer *lpgr;
+@property (strong, nonatomic) IBOutlet SmoothedBIView *smoothDrawnView;
 
 @end
